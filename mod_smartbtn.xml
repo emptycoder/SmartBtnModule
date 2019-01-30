@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site">
+    <name>Smart button</name>
+    <author>Yaroslav Sanko</author>
+    <version>0.0.1</version>
+    <description>A simple way to place a button to your website.</description>
+    <files>
+        <filename>mod_smartbtn.xml</filename>
+        <filename module="mod_smartbtn">mod_smartbtn.php</filename>
+        <filename>index.html</filename>
+        <scriptfile>script.php</scriptfile>
+    </files>
+<config>
+<fields name="params">
+    <fieldset name="basic" label="Display options">
+        <field
+               name="eFields"
+               type="text"
+               default="Не все поля были введены!~Not all fields have been entered!"
+               label="Задать текст для ошибки"
+               required="true"/>
+        <field
+               name="eEmail"
+               type="text"
+               default="Неверный email!~Invalid email!"
+               label="Задать текст для ошибки"
+               required="true"/>
+        <field
+               name="sEmail"
+               type="text"
+               default="Сообщение отправлено!~Message sent!"
+               label="Задать текст для успешной отправки"
+               required="true"/>
+        <field
+               name="fEmail"
+               type="text"
+               default="E-mail"
+               label="Задать текст для поля E-mail"
+               required="true"/>
+        <field
+               name="fName"
+               type="text"
+               default="Имя~Name"
+               label="Задать текст для поля Имя(Name)"
+               required="true"/>
+        <field
+               name="fInputText"
+               type="text"
+               default="Введите сообщение~Input message"
+               label="Задать текст для поля с текстом"
+               required="true"/>
+        <field
+               name="bOpenClose"
+               type="text"
+               default="Заказать первичную консультацию бесплатно~Order a primary consultation for free"
+               label="Задать текст для кнопки открытия/закрытия формы"
+               required="true"/>
+        <field
+               name="bSend"
+               type="text"
+               default="Отправить~Send"
+               label="Задать текст для кнопки отправки"
+               required="true"/>
+
+        <field
+               name="bOpenCloseClass"
+               type="text"
+               default="confirm confirmH bOpenClose"
+               label="Задать заголовки класса для кнопки открытия/закрытия формы"
+               required="true"/>
+        <field
+               name="successClass"
+               type="text"
+               default="success"
+               label="Задать заголовки класса для сообщения об отправке"
+               required="true"/>
+        <field
+               name="formClass"
+               type="text"
+               default="slideForm slide"
+               label="Задать заголовки класса для формы"
+               required="true"/>
+        <field
+               name="fNameClass"
+               type="text"
+               default="Input-text nameField"
+               label="Задать заголовки класса для поля Имя(Name)"
+               required="true"/>
+        <field
+               name="fEmailClass"
+               type="text"
+               default="Input-text emailField"
+               label="Задать заголовки класса для поля E-mail"
+               required="true"/>
+        <field
+               name="fTextClass"
+               type="text"
+               default="Input-text textField"
+               label="Задать заголовки класса для текстового поля"
+               required="true"/>
+        <field
+               name="bSendClass"
+               type="text"
+               default="confirm sendBtn"
+               label="Задать заголовки класса для кнопки отправки"
+               required="true"/>
+    </fieldset>
+</fields>
+</config>
+</extension>
